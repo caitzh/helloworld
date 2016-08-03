@@ -39,15 +39,15 @@ git clone git@github.com:caitzh/helloworld.git 复制远程代码到本地
 ## 分支(branch)
 查看分支：git branch
 
-创建分支：git branch <name>
+创建分支：git branch new_branch_name
 
-切换分支：git checkout <name>
+切换分支：git checkout new_branch_name
 
-创建+切换分支：git checkout -b <name>
+创建+切换分支：git checkout -b new_branch_name
 
-合并某分支到当前分支：git merge <name>
+合并某分支到当前分支：git merge new_branch_name
 
-删除分支：git branch -d <name>
+删除分支：git branch -d new_branch_name
 
 
 
