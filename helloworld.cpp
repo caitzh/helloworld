@@ -7,4 +7,5 @@ int main() {
 	cout << "hello world" << endl;
 	return 0;
 }
-// test for branch conflict 2
+// test for branch conflict
+
