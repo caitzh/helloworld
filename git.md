@@ -34,6 +34,21 @@ git push -u origin master 推送到远程代码库, **第一次加-u**, Git就�
 
 git pull origin master 取得远程仓库代码到本地
 
+git clone git@github.com:caitzh/helloworld.git 复制远程代码到本地
+
+## 分支(branch)
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
 
 
 
