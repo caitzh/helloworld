@@ -1,2 +1,3 @@
 # helloworld
-test for learning git, including some commands of git
+### test for learning git
+### study notes of git (in git.md)
