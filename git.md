@@ -106,9 +106,32 @@ git push origin :refs/tags/v0.9  删除远程标签
 
 4. 想让对方接受你的修改, 可以在GitHub上发起一个pull request(对方不一定接受)
 
-## git 配置
+## git ignore
 
-git config --global color.ui true  让git显示颜色
+创建.gitignore文件, 里面写上忽略的文件名
+
+git add filename 尝试添加已忽略文件时会报错, 解决方法如下：
+
+1. git add -f filename 加**-f**参数, 强制添加已忽略的文件
+
+2. git check-ignore -v filename 查看ignore文件, 看哪一行忽略了此filename, 并修改ignore文件
+
+
+## git 颜色
+
+git config --global color.ui true  让 git 命令行显示颜色
+
+## 命令简化
+
+git config --global alias.st status 用 st 作为status的别名, 之后只要输入"git st"即相当于"git status"
+
+git config --global alias.ci commit 同理, 用"git ci" 代替 "git commit"
+
+--global 是全局的意思, 即对当前用户的所有仓库起作用, 不加则只对当前仓库有效
+
+每个仓库的Git配置文件都放在.git/config文件中, 里面的[alias]即别名, 命令简化也可直接修改此文件
+
+当前用户的Git配置文件放在用户主目录下(如"C:\Users\Administrator\")的一个隐藏文件.gitconfig中
 
 
 
